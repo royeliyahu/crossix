@@ -28,7 +28,6 @@ public class SortData {
 				data.add(st);
 				for(int i = 1; i < bufferSize && (st = br.readLine()) != null; i++) {
 				    data.add(st);
-					System.out.println(st);				    				
 				}
 			
 				data.sort((p1, p2) -> p1.compareTo(p2));
@@ -103,12 +102,7 @@ public class SortData {
 
 		while(working.stream().anyMatch(Boolean.TRUE::equals)) {
 			//flow
-			try{
-				input.sort((p1, p2) -> p1.compareTo(p2));
-			}
-			catch (Exception e){
-				System.err.println("gfgfg");
-			}
+			input.sort((p1, p2) -> p1.compareTo(p2));
 			String first = input.get(0);
 
 			writer.println(first);
@@ -136,10 +130,7 @@ public class SortData {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-
-			
 		}
-		
 		writer.close();
 	}
 }
